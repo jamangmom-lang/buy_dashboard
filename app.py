@@ -5,7 +5,7 @@ st.title("구매팀 대시보드 (초안)")
 
 uploaded = st.file_uploader("엑셀 파일 업로드", type=["xlsx", "xls"])
 
-# ✅ 업로드 파일을 세션에 저장
+# 업로드 파일을 세션에 저장
 if uploaded is not None:
     st.session_state["uploaded_bytes"] = uploaded.getvalue()
 
